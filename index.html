@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Lazada</title>
+        <meta name="description" content="">
+        <meta name="author" content="SitePoint">
+
+        <link rel="stylesheet" href="css/style.css?v=1.0">
+
+        <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="lightbox" class="lightbox">
+            <div class="box">
+                <div class="close" onclick="objLightBox.close('lightbox');">
+                    <img src="images/img-close.gif" alt="close" />
+                </div>
+
+
+                <div id="tab" class="tabs">
+                    <ul class="tab">
+                        <li onclick="objTabs.tab('login');" class="active">Login</li>
+                        <li onclick="objTabs.tab('signup');">Signup</li>
+                    </ul>                    
+                    <div class="container">
+                        <div class="tab form login">
+                            <form name="login" action="#">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input class="form-control" type="text" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input class="form-control" name="password" type="password" value="" />
+                                </div>
+                                <div class="form-group">                                
+                                    <input class="btn btn-primary" onclick="obvLogin.password('password'); return false;" type="submit" value="Login" />
+                                    <a class="link" href="#">Forgot Password?</a>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="tab form signup hidden">
+                            Signup Form
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h1 class="heading">Or login with</h1>
+                    <div class="container">
+                        <a class="link" href=""><img src="images/img-facebook.gif" /></a>
+                        <a class="link" href=""><img src="images/img-google.gif" /></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
